@@ -115,3 +115,24 @@ contactEmail.textContent = siteContent["contact"]["email"];
 const copyrightSection = document.querySelector("footer");
 const copyright = copyrightSection.querySelector("a");
 copyright.textContent = siteContent["footer"]["copyright"];
+
+//css
+services.classList.add("italic");
+product.classList.add("italic");
+vision.classList.add("italic");
+features.classList.add("italic");
+about.classList.add("italic");
+contact.classList.add("italic");
+
+copyright.classList.add("bold");
+
+//images 
+const logoImage = document.querySelector("header img");
+logoImage.setAttribute("src", "http://localhost:9000/img/logo.png");
+
+const ctaImage = document.querySelector(".cta img");
+ctaImage.setAttribute("src", "http://localhost:9000/img/cta.png");
+
+const contentImage = document.querySelector(".main-content img");
+contentImage.setAttribute("src", "http://localhost:9000/img/accent.png");
+
