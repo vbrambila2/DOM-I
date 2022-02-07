@@ -41,6 +41,7 @@ const siteContent = { // DO NOT CHANGE THIS OBJECT
 
 console.log('project wired!');
 
+//header
 const services = document.querySelector("nav a");
 services.textContent = siteContent["nav"]["nav-item-1"];
 const product = services.nextElementSibling;
@@ -54,17 +55,21 @@ about.textContent = siteContent["nav"]["nav-item-5"];
 const contact = about.nextElementSibling;
 contact.textContent = siteContent["nav"]["nav-item-6"];
 
-// const product = document.querySelector("nav", ".nav-item-2");
-// const vision = document.querySelector("nav", ".nav-item-3");
-// const features = document.querySelector("nav", ".nav-item-4");
-// const about = document.querySelector("nav", ".nav-item-5");
-// const contact = document.querySelector("nav", ".nav-item-6");
+//cta
+const title = document.querySelector(".cta h1");
+title.textContent = siteContent["cta"]["h1"];
+const button = document.querySelector(".cta button");
+button.textContent = siteContent["cta"]["button"];
 
-// services.textContent = siteContent["nav"]["nav-item-1"];
-// product.textContent = siteContent["nav"]["nav-item-2"];
-// vision.textContent = siteContent["nav"]["nav-item-3"];
-// features.textContent = siteContent["nav"]["nav-item-4"];
-// about.textContent = siteContent["nav"]["nav-item-5"];
-// contact.textContent = siteContent["nav"]["nav-item-6"];
+//top-content
+const featuresTitle = document.querySelector(".top-content h4");
+featuresTitle.textContent = siteContent["main-content"]["features-h4"];
+const featuresBody = featuresTitle.nextElementSibling;
+featuresBody.textContent = siteContent["main-content"]["features-content"];
 
-
+const nextTopContent = document.querySelector(".top-content .text-content");
+const aboutSection = nextTopContent.nextElementSibling;
+const aboutTitle = aboutSection.querySelector("h4");
+aboutTitle.textContent = siteContent["main-content"]["about-h4"];
+const aboutBody = aboutTitle.nextElementSibling;
+aboutBody.textContent = siteContent["main-content"]["about-content"];
