@@ -39,4 +39,32 @@ const siteContent = { // DO NOT CHANGE THIS OBJECT
   },
 };
 
-console.log('project wired!')
+console.log('project wired!');
+
+const services = document.querySelector("nav a");
+services.textContent = siteContent["nav"]["nav-item-1"];
+const product = services.nextElementSibling;
+product.textContent = siteContent["nav"]["nav-item-2"];
+const vision = product.nextElementSibling;
+vision.textContent = siteContent["nav"]["nav-item-3"];
+const features = vision.nextElementSibling;
+features.textContent = siteContent["nav"]["nav-item-4"];
+const about = features.nextElementSibling;
+about.textContent = siteContent["nav"]["nav-item-5"];
+const contact = about.nextElementSibling;
+contact.textContent = siteContent["nav"]["nav-item-6"];
+
+// const product = document.querySelector("nav", ".nav-item-2");
+// const vision = document.querySelector("nav", ".nav-item-3");
+// const features = document.querySelector("nav", ".nav-item-4");
+// const about = document.querySelector("nav", ".nav-item-5");
+// const contact = document.querySelector("nav", ".nav-item-6");
+
+// services.textContent = siteContent["nav"]["nav-item-1"];
+// product.textContent = siteContent["nav"]["nav-item-2"];
+// vision.textContent = siteContent["nav"]["nav-item-3"];
+// features.textContent = siteContent["nav"]["nav-item-4"];
+// about.textContent = siteContent["nav"]["nav-item-5"];
+// contact.textContent = siteContent["nav"]["nav-item-6"];
+
+
