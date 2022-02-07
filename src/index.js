@@ -69,7 +69,29 @@ featuresBody.textContent = siteContent["main-content"]["features-content"];
 
 const nextTopContent = document.querySelector(".top-content .text-content");
 const aboutSection = nextTopContent.nextElementSibling;
+
 const aboutTitle = aboutSection.querySelector("h4");
 aboutTitle.textContent = siteContent["main-content"]["about-h4"];
 const aboutBody = aboutTitle.nextElementSibling;
 aboutBody.textContent = siteContent["main-content"]["about-content"];
+
+//bottom-content
+const servicesTitle = document.querySelector(".bottom-content h4");
+servicesTitle.textContent = siteContent["main-content"]["services-h4"];
+const servicesBody = servicesTitle.nextElementSibling;
+servicesBody.textContent = siteContent["main-content"]["services-content"];
+
+const nextBottomContent = document.querySelector(".bottom-content .text-content");
+const productSection = nextBottomContent.nextElementSibling;
+
+const productTitle = productSection.querySelector("h4");
+productTitle.textContent = siteContent["main-content"]["product-h4"];
+const productBody = productTitle.nextElementSibling;
+productBody.textContent = siteContent["main-content"]["product-content"];
+
+const visionSection = productSection.nextElementSibling;
+
+const visionTitle = visionSection.querySelector("h4");
+visionTitle.textContent = siteContent["main-content"]["vision-h4"];
+const visionBody = visionTitle.nextElementSibling;
+visionBody.textContent = siteContent["main-content"]["vision-content"];
